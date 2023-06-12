@@ -8,6 +8,7 @@ class Menus{
     public:
         Menus();
         void mainMenu();
+        void printGraph();
     private:
         Utils utils;
 };

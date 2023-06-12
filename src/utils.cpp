@@ -5,8 +5,9 @@ Utils::Utils(){
 }
 
 void Utils::dfs(Vertex* vertex){
+    
     vertex->setVisited(true);
-    std::cout << vertex->getId() << std::endl;
+    std::cout << vertex->getId() << " -> ";
 
     std::unordered_map<int, Edge*> adj = vertex->getAdj();
     for(auto a: adj){
@@ -14,4 +15,5 @@ void Utils::dfs(Vertex* vertex){
             this->dfs(a.second->getDest());
         }
     }
+    
 }

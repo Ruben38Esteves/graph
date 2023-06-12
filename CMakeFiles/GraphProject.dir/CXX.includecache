@@ -6,25 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/raben/graphfun/main.cpp
-iostream
--
-src/menus.h
-/home/raben/graphfun/src/menus.h
-
-/home/raben/graphfun/src/VertexEdge.cpp
-VertexEdge.h
-/home/raben/graphfun/src/VertexEdge.h
-
 /home/raben/graphfun/src/VertexEdge.h
 unordered_map
 -
 iostream
 -
-
-/home/raben/graphfun/src/graph.cpp
-graph.h
-/home/raben/graphfun/src/graph.h
 
 /home/raben/graphfun/src/graph.h
 unordered_map
@@ -37,14 +23,14 @@ VertexEdge.h
 /home/raben/graphfun/src/menus.cpp
 menus.h
 /home/raben/graphfun/src/menus.h
+chrono
+-
+thread
+-
 
 /home/raben/graphfun/src/menus.h
 iostream
 -
-utils.h
-/home/raben/graphfun/src/utils.h
-
-/home/raben/graphfun/src/utils.cpp
 utils.h
 /home/raben/graphfun/src/utils.h
 
