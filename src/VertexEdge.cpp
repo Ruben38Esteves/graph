@@ -8,13 +8,28 @@ int Vertex::getId(){
     return this->id;
 }
 
-unordered_map<int, Edge*> Vertex::getAdj(){
+std::unordered_map<int, Edge*> Vertex::getAdj(){
     return this->adj;
 }
 
 void Vertex::addEdge(Vertex* dest, int weight){
-    Edge* edge = new Edge(this, dest, weight);
+    Vertex* orig = this;
+    Edge* edge = new Edge(orig, dest, weight);
     this->adj[dest->getId()] = edge;
+}
+
+void Vertex::setVisited(bool visited){
+    this->visited = visited;
+}
+
+bool Vertex::getVisited(){
+    return this->visited;
+}
+
+Edge::Edge(Vertex* orig, Vertex* dest, int weight){
+    this->orig = orig;
+    this->dest = dest;
+    this->weight = weight;
 }
 
 int Edge::getWeight(){

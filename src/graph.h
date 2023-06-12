@@ -2,18 +2,20 @@
 #define _GRAPH_
 
 #include <unordered_map>
+#include <iostream>
 #include "VertexEdge.h"
 
-class graph{
+class Graph{
     public:
-        graph();
-        unordered_map<int, Vertex*> getVertexMap();
+        Graph();
+        std::unordered_map<int, Vertex*> getVertexMap();
         void addVertex(int id);
         Vertex* getVertex(int id);
         void addEdge(int orig, int dest, int weight);
         void addBidirectionalEdge(int orig, int dest, int weight);
+        void resetVisited();
     private:
-        unordered_map<int, Vertex*> vertexMap;
-}
+        std::unordered_map<int, Vertex*> vertexMap;
+};
 
 #endif

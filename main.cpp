@@ -1,5 +1,8 @@
 #include <iostream>
 
-int main() {
+#include "src/menus.h"
 
+int main() {
+    Menus menus = Menus();
+    menus.mainMenu();
 }
